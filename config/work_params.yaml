@@ -1,4 +1,4 @@
-/ros2_laser_scan_merger:
+/work_laser_scan_merger:
   ros__parameters:
     flip1: false
     flip2: false

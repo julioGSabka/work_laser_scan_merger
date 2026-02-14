@@ -24,20 +24,20 @@ def generate_launch_description():
     )
 
     rviz_config_dir = os.path.join(
-        get_package_share_directory('ros2_laser_scan_merger'),
+        get_package_share_directory('work_laser_scan_merger'),
         'rviz',
         'ros2_laser_scan_merge.rviz'
     )
 
     config = os.path.join(
-        get_package_share_directory('ros2_laser_scan_merger'),
+        get_package_share_directory('work_laser_scan_merger'),
         'config',
         'work_params.yaml'
     )
 
     work_scans_merger = launch_ros.actions.Node(
-            package='ros2_laser_scan_merger',
-            executable='ros2_laser_scan_merger',
+            package='work_laser_scan_merger',
+            executable='work_laser_scan_merger',
             parameters=[
                 config,
                 {'use_sim_time': use_sim_time}

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(ros2_laser_scan_merger)
+project(work_laser_scan_merger)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -32,8 +32,8 @@ include_directories(
   include
   ${PCL_INCLUDE_DIRS}
 )
-add_executable(ros2_laser_scan_merger src/main.cpp)
-ament_target_dependencies(ros2_laser_scan_merger 
+add_executable(work_laser_scan_merger src/main.cpp)
+ament_target_dependencies(work_laser_scan_merger 
   rclcpp 
   std_msgs 
   sensor_msgs
@@ -58,7 +58,7 @@ install(DIRECTORY
 
 
 install(TARGETS
-ros2_laser_scan_merger
+work_laser_scan_merger
 DESTINATION lib/${PROJECT_NAME})
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
