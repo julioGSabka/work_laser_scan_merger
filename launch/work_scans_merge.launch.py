@@ -71,6 +71,7 @@ def generate_launch_description():
 
         declare_use_rviz,
         declare_use_sim_time,
+        
         work_scans_merger,
         work_pcl_to_scan,
         rviz_node
